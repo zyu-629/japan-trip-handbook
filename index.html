@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#16213e">
+<title>大阪·京都·东京 十日旅行手册</title>
+<style>
+:root{--ink:#20222b;--sub:#5d6068;--acc:#0e7a5f;--acc2:#b06a28}
+*{box-sizing:border-box;margin:0;padding:0;-webkit-tap-highlight-color:transparent}
+html{scroll-behavior:smooth;scroll-padding-top:64px}
+body{font-family:-apple-system,"PingFang SC","Noto Sans SC",sans-serif;color:#f4f1ea;line-height:1.6;font-size:15px;background:#232f4b}
+body::before{content:"";position:fixed;inset:0;z-index:-2;background:linear-gradient(165deg,#16213e 0%,#2b3a63 26%,#5a5578 48%,#a3778f 68%,#d99a76 86%,#f0c495 100%)}
+body::after{content:"";position:fixed;inset:0;z-index:-1;opacity:.5;background:radial-gradient(60% 40% at 85% 8%,rgba(255,214,160,.35),transparent 60%),radial-gradient(50% 35% at 10% 30%,rgba(140,180,255,.22),transparent 60%)}
+.wrap{max-width:700px;margin:0 auto;padding:0 14px 80px}
+header{padding:36px 6px 12px}
+h1{font-family:"Hiragino Mincho ProN","Yu Mincho","Songti SC","Noto Serif SC",serif;font-size:30px;line-height:1.35;font-weight:700;letter-spacing:.04em;background:linear-gradient(120deg,#fff 30%,#ffe6bf 70%,#ffc98a 100%);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
+.sub{color:rgba(255,255,255,.82);font-size:13px;margin-top:8px;text-shadow:0 1px 8px rgba(10,15,35,.5)}
+nav{position:sticky;top:0;z-index:9;padding:10px 0 9px;display:flex;gap:7px;overflow-x:auto;background:rgba(22,28,50,.55);backdrop-filter:blur(20px) saturate(1.5);-webkit-backdrop-filter:blur(20px) saturate(1.5);border-bottom:1px solid rgba(255,255,255,.14);margin:0 -14px;padding-left:14px;padding-right:14px}
+nav::-webkit-scrollbar{display:none}
+@media (max-width:380px){nav{gap:5px}nav a{padding:4px 9px;font-size:11.5px}}
+nav a{flex:0 0 auto;background:rgba(255,255,255,.13);border:1px solid rgba(255,255,255,.28);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border-radius:999px;padding:5px 13px;color:#fff;font-size:12.5px;font-weight:600;text-decoration:none;white-space:nowrap;text-shadow:0 1px 4px rgba(10,15,35,.5)}
+.notice{background:rgba(255,248,238,.82);border:1px solid rgba(255,214,150,.65);backdrop-filter:blur(18px) saturate(1.3);-webkit-backdrop-filter:blur(18px) saturate(1.3);border-radius:14px;padding:11px 14px;font-size:12.5px;color:#6f4c0e;margin:14px 0;box-shadow:0 8px 24px rgba(10,15,35,.2)}
+.notice b{color:#a35f1d}
+.notice a{color:#a35f1d;font-weight:700}
+h2{font-size:19px;font-weight:800;margin:34px 4px 6px;color:#fff;text-shadow:0 2px 12px rgba(10,15,35,.65)}
+h2 small{display:block;font-weight:500;font-size:12.5px;color:rgba(255,255,255,.78);margin-top:4px;text-shadow:0 1px 6px rgba(10,15,35,.5)}
+.cityh{font-family:"Hiragino Mincho ProN","Yu Mincho","Songti SC",serif;font-size:24px;margin:40px 0 8px;padding:16px 18px;border-radius:20px;background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.32);backdrop-filter:blur(22px) saturate(1.5);-webkit-backdrop-filter:blur(22px) saturate(1.5);box-shadow:0 14px 40px rgba(10,15,35,.35);color:#fff}
+.cityh small{display:block;font-family:-apple-system,"PingFang SC",sans-serif;font-weight:500;font-size:12.5px;color:rgba(255,255,255,.8);margin-top:5px}
+.dayh{font-size:16.5px;font-weight:800;color:#ffd28f;margin:26px 4px 2px;padding-bottom:6px;border-bottom:1px solid rgba(255,255,255,.16);text-shadow:0 2px 8px rgba(10,15,35,.55)}
+.daymeta a{color:#0d5c42;font-weight:700}
+.daymeta{background:rgba(255,255,255,.68);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);border:1px solid rgba(255,255,255,.55);border-radius:12px;padding:9px 12px;font-size:12.5px;color:#2b2e38;margin:10px 0}
+.card{background:rgba(255,255,255,.72);border:1px solid rgba(255,255,255,.6);backdrop-filter:blur(22px) saturate(1.6);-webkit-backdrop-filter:blur(22px) saturate(1.6);border-radius:16px;padding:11px 13px;margin:9px 0;box-shadow:0 6px 20px rgba(10,15,35,.18)}
+.card .nm{font-weight:800;font-size:15.5px;color:#23252e;text-decoration:none;background:linear-gradient(transparent 78%,rgba(14,122,95,.28) 78%)}
+.card .nm:active{background:rgba(14,122,95,.18)}
+.st{color:#c9821f;font-weight:800}
+.svd{display:inline-block;font-size:10px;border-radius:6px;padding:1px 6px;background:rgba(14,122,95,.14);color:#0e7a5f;font-weight:700;vertical-align:2px;margin-left:5px}
+.chip{display:inline-block;font-size:10.5px;border-radius:999px;padding:2px 8px;background:rgba(20,60,45,.09);color:#3c5a4c;font-weight:600;margin-left:6px}
+.feat{font-size:13.5px;margin-top:5px;color:#3a3d46}
+.wr{display:block;margin-top:5px;font-size:12.5px;color:#b23c32;font-weight:700}
+.eat{background:rgba(255,248,238,.8);border:1px dashed rgba(176,106,40,.5);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-radius:12px;padding:9px 12px;font-size:13px;margin:9px 0;color:#6b3d10}
+.eat b{color:#a35f1d}
+.transit{background:rgba(255,255,255,.66);border:1px solid rgba(14,122,95,.4);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);border-radius:12px;padding:9px 12px;font-size:12.5px;color:#0d5c42;margin:9px 0;font-weight:700}
+.flow{background:rgba(255,255,255,.55);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border:1px solid rgba(255,255,255,.5);border-radius:12px;padding:9px 12px 9px 28px;font-size:13.5px;color:#2b2e38;margin:9px 0}
+.flow li{margin:3px 0}
+details{background:rgba(255,255,255,.58);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);border:1px solid rgba(255,255,255,.55);border-radius:14px;margin:9px 0;overflow:hidden}
+summary{padding:10px 13px;font-weight:700;font-size:13.5px;cursor:pointer;color:#0e7a5f;list-style:none}
+summary::-webkit-details-marker{display:none}
+details .inner{padding:0 13px 11px;font-size:13.5px;color:#3a3d46}
+table{width:100%;border-collapse:separate;border-spacing:0;background:rgba(255,255,255,.86);backdrop-filter:blur(18px);-webkit-backdrop-filter:blur(18px);border-radius:16px;overflow:hidden;font-size:13px;color:#14161c;font-weight:500;border:1px solid rgba(255,255,255,.55);box-shadow:0 10px 28px rgba(10,15,35,.22)}
+th,td{padding:8px 10px;border-bottom:1px solid rgba(20,30,60,.08);text-align:left;vertical-align:top}
+th{background:rgba(240,238,232,.9);font-size:12.5px;color:#1f2128}
+tr:last-child td{border-bottom:none}
+.card.mini{padding:8px 11px;margin:7px 0;background:rgba(255,255,255,.62)}
+.card.mini .nm{font-size:14.5px}
+.card.mini .feat{font-size:12.5px;margin-top:3px}
+.card.starline{background:rgba(255,236,196,.8);border-color:rgba(255,190,120,.65)}
+.card.starline .feat{line-height:2.1;font-size:13px}
+.card.starline a{font-weight:800;color:#8a4a12;white-space:nowrap;text-decoration:none;border-bottom:1px solid rgba(138,74,18,.3)}
+.wb{background:rgba(255,255,255,.8);border:1px solid rgba(178,60,50,.4);border-radius:12px;padding:9px 12px;font-size:12.5px;color:#7c2f28;margin:10px 0}
+.fab{position:fixed;right:16px;bottom:calc(18px + env(safe-area-inset-bottom));z-index:20;width:46px;height:46px;border-radius:50%;background:rgba(255,255,255,.2);border:1px solid rgba(255,255,255,.45);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);color:#fff;font-size:20px;display:flex;align-items:center;justify-content:center;text-decoration:none;text-shadow:0 1px 6px rgba(10,15,35,.6);box-shadow:0 8px 22px rgba(10,15,35,.35)}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header><h1>大阪 · 京都 · 东京<br>十日旅行手册</h1>
+<div class="sub">2026/10/2 – 10/11 ｜ 大阪进 东京出 ｜ 两人同行 ｜ 点店名直接拉起 Maps ｜ 📲 Safari 分享→<b>添加到主屏幕</b>（离线秒开）</div></header>
+<nav><a href="#today">📍今天</a><a href="#ov">总览</a><a href="#osaka">大阪</a><a href="#kyoto">京都</a><a href="#tokyo">东京</a><a href="#util">实用</a><a href="#ov">↑顶部</a></nav>
+<div class="notice">⚡ <b>现在就做</b>：① <a href="https://www.shibuya-sky.jp/">订 Shibuya Sky 10/9 夜场</a>（变动票价）② <a href="https://smart-ex.jp/">SmartEX 买新干线指定席</a> ③ <a href="https://omakase.in/">约 やま岸 10/4</a>（或电话 075-221-2187）④ 确认十忠八九周六营业 ⑤ 查 Jazz HANAYA 10/6 营业（电话/官网/IG）</div>
+<div class="daymeta">💴 <b>现金 ¥30,000+</b>（大量店 cash only）｜ 🧳 <b>行李</b>：10/6 宅急便京都→东京 ｜ 🛃 <b>免税</b>：满¥5,000·护照原件（新制 2026/11/1 起·本次不受影响）｜ 🏨 <b>三酒店均不含早</b> ｜ 📶 <b>上网</b>：eSIM 提前装（Ubigi/Airalo）+ Maps 离线包（大阪/京都/东京）</div>
+<h2 id="ov">行程总览</h2>
+<table>
+<tr><th>日期</th><th>城市/住宿</th><th>主线</th></tr>
+<tr><td>10/2 五</td><td>大阪 · androoms 本町</td><td>关西机场→临空奥莱→桔子街→道顿堀·Nayuta</td></tr>
+<tr><td>10/3 六</td><td>大阪</td><td>梅田购物→蓝天大厦日落→十忠八九</td></tr>
+<tr><td>10/4 日</td><td>京都 · Fresa 四条乌丸</td><td>锦市场→新风馆→河原町→やま岸·GINZA MUSIC BAR</td></tr>
+<tr><td>10/5 一</td><td>京都</td><td>东山早起→冈崎→木屋町·Chiriri</td></tr>
+<tr><td>10/6 二</td><td>京都</td><td>岚山→户外店→Jazz HANAYA⭐（宅急便寄行李）</td></tr>
+<tr><td>10/7 三</td><td>东京 · LiVEMAX 东银座</td><td>日本桥跑步店→银座→DevilCraft</td></tr>
+<tr><td>10/8 四</td><td>东京</td><td>⭐中目黑→代官山→惠比寿→Bar Trench</td></tr>
+<tr><td>10/9 五</td><td>东京</td><td>明治神宫→原宿→新宿17:00→涩谷夜景</td></tr>
+<tr><td>10/10 六</td><td>10/11 01:00 起飞（按机票）</td><td>下北泽→取行李→羽田 T3（22:30 前到）</td></tr>
+<tr><td>10/11 日</td><td>—</td><td>落地（目的地/时间按机票）</td></tr>
+</table>
+<h2 class="cityh" id="osaka">大阪<small>10/2–10/3 · androoms 本町 2晚·不含早 · ☔雨天→GrandFront</small></h2>
+<h3 class="dayh">10/2 周五 · 落地大阪 → 临空奥莱 → 桔子街 → 道顿堀</h3>
+<div class="daymeta">约 06:00 前后落地（按机票）→ 南海线/JR → 临空城 → 回大阪市区。酒店 <b><a href='https://maps.google.com/?cid=5804717415659715387'>androoms 大阪本町</a></b>（2晚·不含早）。⚠️ 周五晚道顿堀人多，晚饭别拖过 19:30 排队。</div>
+<div class="card"><a class="nm" href="https://maps.google.com/?cid=17397871139225636744">关西机场 KIX</a><span class="svd">已存</span><span class="chip">✈️ 锚点</span><div class="feat">落地 → 出关 → 买交通卡 → 赴奥莱</div></div>
+<div class="card"><a class="nm" href="https://maps.google.com/?cid=14141131390446530690">Rinku Premium Outlets</a><span class="svd">已存</span><span class="chip">🛍️ 奥莱</span><div class="feat">落地首站 10:00 开门·大件行李先寄奥莱/机场储物柜再逛</div><span class="wr">⚠️ 11:00 前未到即整站放弃，直接进市区</span></div>
+<div class="card"><a class="nm" href="https://maps.google.com/?cid=13762337515684903919">桔子街入口（Orange Street）</a><span class="chip">📍 锚点</span><div class="feat">南堀江–堀江 家具/选货街 东起西行</div></div>
+<div class="card"><a class="nm" href="https://maps.google.com/?cid=5880436095034528521">STREAMER COFFEE 心斋桥</a><span class="svd">已存</span><span class="chip">☕</span><div class="feat">美式复古 桔子街东端歇脚</div></div>
+<div class="card"><a class="nm" href="https://maps.google.com/?cid=16291659530834990214">LiLo Coffee Roasters</a><span class="chip">☕</span><div class="feat">手冲选豆多 本地人气</div></div>
+<div class="card"><a class="nm" href="https://maps.google.com/?cid=7228361764195579680">Mel Coffee Roasters 新町</a><span class="chip">☕ 支线</span><div class="feat">帖子常客老铺</div></div>
+<div class="card"><a class="nm" href="https://maps.google.com/?cid=16803651348447164176">CONZ 南堀江</a><span class="chip">👕</span><div class="feat">¥3k–20k 日系选货老铺 桔子街必逛</div></div>
+<div class="card"><a class="nm" href="https://maps.google.com/?cid=14905242027669413451">kindal horie</a><span class="chip">🧸 中古</span><div class="feat">中古连锁名店</div></div>
+<div class="card"><a class="nm" href="https://maps.google.com/?cid=4529609254041158137">BIOTOP OSAKA</a><span class="chip">👕</span><div class="feat">生活感选货+家居 桔子街西段</div></div>
+<div class="card"><a class="nm" href="https://maps.google.com/?cid=15950868141578853340">三角公园 Mitsu Park</a><span class="chip">📍 锚点</span><div class="feat">美国村地标 歇脚拍照</div></div>
+<div class="card"><a class="nm" href="https://maps.google.com/?cid=4448462780053158731">心斋桥PARCO</a><span class="chip">🛍️</span><div class="feat">潮牌/设计师楼层</div></div>
+<details><summary>☕ 桔子街咖啡支线（顺路可加·点店名直达 Maps）</summary><div class="inner"><div class="card mini"><a class="nm" href="https://maps.google.com/?cid=14938956770142056187">B portland</a><div class="feat">☕ 自家焙煎·桔子街周边</div></div><div class="card mini"><a class="nm" href="https://maps.google.com/?cid=9622061837733979085">LE PRIEURÉ</a><div class="feat">☕ 桔子街周边</div></div><div class="card mini"><a class="nm" href="https://maps.google.com/?cid=11434774819813114308">aoma coffee</a><div class="feat">☕ 社区咖啡</div></div><div class="card mini"><a class="nm" href="https://maps.google.com/?cid=10228480886102879035">ULT.</a><div class="feat">☕ 京町堀</div></div><div class="card mini"><a class="nm" href="https://maps.google.com/?cid=300719921601020371">Embankment Coffee</a><div class="feat">☕ 北滨·川沿</div></div><div class="card mini"><a class="nm" href="https://maps.google.com/?cid=18436798584987103295">Takamura Wine & Coffee</a><div class="feat">☕+🍷 江户堀</div></div><div class="card mini"><a class="nm" href="https://maps.google.com/?cid=13532098939297001161">YARD Coffee House</a><div class="feat">☕ 社区店</div></div></div></details>
+<div class="eat">🍕 <b>晚饭·道顿堀二选一</b>：美津の（大阪烧·必比登·排队30–60分）｜ わなか（章鱼烧·快取）。排队过长就 GRAND FRONT / 地下街兜底。</div>
+<div class="card"><a class="nm" href="https://maps.google.com/?cid=14993068628475195202">美津の</a><span class="chip">🍕 大阪烧</span><div class="feat">米其林必比登常客</div><span class="wr">⚠️ 排队30–60分 周五晚更久</span></div>
+<div class="card"><a class="nm" href="https://maps.google.com/?cid=2130839552230731987">わなか</a><span class="chip">🐙 章鱼烧</span><div class="feat">道顿堀两强 外带走快</div></div>
+<div class="card"><a class="nm" href="https://maps.google.com/?cid=6582327784679221695">Glico 道顿堀招牌</a><span class="chip">📍 夜景</span><div class="feat">戎桥打卡</div></div>
+<div class="card"><a class="nm" href="https://maps.google.com/?cid=8702241179377055165">Bar Nayuta</a><span class="chip">🍸 酒吧</span><div class="feat">美国村5F·无菜单创作·Time Out 推荐（10/2 晚场席位）</div></div>
+<div class="transit">🚇 回程：心斋桥/美国村 → 御堂筋线 → 本町站 → androoms</div>
+<h3 class="dayh">10/3 周六 · 梅田购物日</h3>
+<div class="daymeta">整天泡梅田商圈（Grand Front / GRAND GREEN / HEP FIVE / 阪急Men's），傍晚上蓝天大厦看日落，晚上十忠八九。☕ 咖啡在 Drip-X（酒店内）+ GLITCH。</div>
+<div class="card"><a class="nm" href="https://maps.google.com/?cid=16154852241840579177">Drip X Coffee</a><span class="chip">☕</span><div class="feat">Vischio 酒店内 亚洲50帖主角 早班出发前</div></div>
+<div class="card"><a class="nm" href="https://maps.google.com/?cid=6806706993377406620">GLITCH COFFEE OSAKA</a><span class="chip">☕</span><div class="feat">浅烘口碑硬</div></div>
+<div class="card"><a class="nm" href="https://maps.google.com/?cid=749935559767271893">Grand Front Osaka</a><span class="chip">🛍️</span><div class="feat">体量最大品牌最全 ☔雨天首选</div></div>
+<div class="card"><a class="nm" href="https://maps.google.com/?cid=7593428275278623927">GRAND GREEN OSAKA</a><span class="chip">🛍️</span><div class="feat">2024 新开街区 公园侧</div></div>
+<div class="card"><a class="nm" href="https://maps.google.com/?cid=7311547120174286369">HEP FIVE</a><span class="chip">🛍️</span><div class="feat">红色摩天轮地标 年轻向</div></div>
+<div class="card"><a class="nm" href="https://maps.google.com/?cid=864138747237477123">Hankyu Men's Osaka</a><span class="chip">🛍️</span><div class="feat">关西男装百货天花板</div></div>
+<div class="card"><a class="nm" href="https://www.google.com/maps/search/?api=1&query=梅田スカイビル">梅田蓝天大厦 空中庭园</a><span class="chip">📍 日落</span><div class="feat">16:40 进场卡位 约17:20 日落（10/3）</div><span class="wr">⚠️ 用 search 链接（cid 匹配偏）</span></div>
+<div class="card"><a class="nm" href="https://maps.google.com/?cid=11834362424498945973">新梅田食道街 354</a><span class="chip">🍢 兜底</span><div class="feat">昭和横丁 便宜大碗 蓝天大厦楼下</div></div>
+<div class="card"><a class="nm" href="https://maps.google.com/?cid=145847859780496963">十忠八九</a><span class="chip">🍜 创意料理</span><div class="feat">曾根崎 人气店</div><span class="wr">⚠️ 周六是否营业出发前电话/官网核实</span></div>
+<div class="card"><a class="nm" href="https://maps.google.com/?cid=6787601036312414646">Sapporo 黑标 BAR</a><span class="chip">🍺</span><div class="feat">官方吧 现挤生啤</div></div>
+<div class="transit">🚇 回程：梅田 → 御堂筋线 → 本町</div>
+<h2 class="cityh" id="kyoto">京都<small>10/4–10/6 · Fresa 四条乌丸 3晚·不含早 · ☔雨天→新风馆+BAL</small></h2>
+<h3 class="dayh">10/4 周日 · 京都 市区 City Walk</h3>
+<div class="daymeta">大阪退房 → <b>东海道新干线</b>赴京（有行李+SmartEX 已订；京都站→乌丸线2站）。无预约备选：阪急京都线直通乌丸。酒店 <b><a href='https://maps.google.com/?cid=12334816686044898240'>Fresa Inn 四条乌丸</a></b>（3晚·不含早）。锦市场当早午餐，下午新风馆+河原町，晚上先斗町。⚠️ 周日商店照常营业但老铺咖啡多休周日。</div>
+<div class="card"><a class="nm" href="https://maps.google.com/?cid=13121875705491233800">京都站</a><span class="chip">🚄 锚点</span><div class="feat">新干线到站 → 乌丸线/巴士</div></div>
+<div class="card"><a class="nm" href="https://maps.google.com/?cid=13159134450370243740">锦市场</a><span class="chip">🍜 市场</span><div class="feat">400年厨房 当早午餐（店铺多为 10:00–18:00·部分店周三/周日定休）</div></div>
+<div class="card"><a class="nm" href="https://www.google.com/maps/search/?api=1&query=新京極商店街">新京极商店街</a><span class="chip">🛍️</span><div class="feat">锦市场北出口直连 雑货/药妆</div></div>
+<div class="card"><a class="nm" href="https://maps.google.com/?cid=6053184420209799521">Stumptown Coffee 京都</a><span class="chip">☕</span><div class="feat">新风馆内 新复古馆</div></div>
+<div class="card"><a class="nm" href="https://maps.google.com/?cid=13062938216905114319">BEAMS JAPAN KYOTO</a><span class="chip">👕</span><div class="feat">新风馆1F 京都限定款</div></div>
+<div class="card"><a class="nm" href="https://maps.google.com/?cid=3853891227935050016">DIG THE LINE</a><span class="chip">🍷</span><div class="feat">新风馆 瓶装酒吧/买瓶走</div></div>
+<div class="card"><a class="nm" href="https://maps.google.com/?cid=9094148226230051080">Kyoto BAL</a><span class="chip">🛍️</span><div class="feat">河原町老牌时尚百货 ☔雨天备选</div></div>
+<div class="card"><a class="nm" href="https://maps.google.com/?cid=7134523557343292447">GOOD NATURE STATION</a><span class="chip">🛍️</span><div class="feat">京町生活方式 1F 杂货</div></div>
+<div class="card"><a class="nm" href="https://maps.google.com/?cid=1696490392892579464">Yamatomichi Kyoto</a><span class="chip">🏕️ UL</span><div class="feat">轻量化直营·市区店（非岚山）</div><span class="wr">⚠️ 仅周五–周日 11:00–18:00 → 10/4 周日可去；10/6 周二闭店</span></div>
+<div class="card"><a class="nm" href="https://maps.google.com/?cid=15829536390558613180">FREAK'S STORE 京都</a><span class="chip">👕</span><div class="feat">新风馆旁</div></div>
+<div class="card"><a class="nm" href="https://maps.google.com/?cid=17354767532566967985">Kapital 京都</a><span class="chip">👕</span><div class="feat">蓝染/丹宁名牌</div></div>
+<div class="card"><a class="nm" href="https://maps.google.com/?cid=9925656646367235362">rroomm 京都</a><span class="chip">👕</span><div class="feat">余白系选货</div></div>
+<details><summary>☕ 京都市区咖啡支线（15家·顺路备选·点店名直达）</summary><div class="inner"><div class="card mini"><a class="nm" href="https://maps.google.com/?cid=7243593543720809253">Weekenders SHINMACHI</a><div class="feat">新町·7:30–17:00·周三休</div></div><div class="card mini"><a class="nm" href="https://maps.google.com/?cid=17757326170199873026">IOLITE</a><div class="feat">☕</div></div><div class="card mini"><a class="nm" href="https://maps.google.com/?cid=1121155605674939259">Goodman Roaster</a><div class="feat">☕ 自家焙煎</div></div><div class="card mini"><a class="nm" href="https://maps.google.com/?cid=6876186519374092049">Kurasu</a><div class="feat">☕ 京都人气自烘</div></div><div class="card mini"><a class="nm" href="https://maps.google.com/?cid=17389203954210900266">HARIO CAFE</a><div class="feat">☕ 器具品牌咖啡</div></div><div class="card mini"><a class="nm" href="https://maps.google.com/?cid=5298422452001836383">Torinoki Coffee</a><div class="feat">☕</div></div><div class="card mini"><a class="nm" href="https://maps.google.com/?cid=17532417395355382157">Walden Woods Kyoto</a><div class="feat">☕</div></div><div class="card mini"><a class="nm" href="https://maps.google.com/?cid=6029784630556233984">FUGLEN KYOTO</a><div class="feat">☕ 挪威名店京都分店</div></div><div class="card mini"><a class="nm" href="https://maps.google.com/?cid=7038535703220495510">SCHOOL BUS</a><div class="feat">☕ 美式校车主题</div></div><div class="card mini"><a class="nm" href="https://maps.google.com/?cid=4136959345794002710">Berry Button</a><div class="feat">☕</div></div><div class="card mini"><a class="nm" href="https://maps.google.com/?cid=18242353790254280369">Kotoro 香灯路</a><div class="feat">☕ 町家</div></div><div class="card mini"><a class="nm" href="https://maps.google.com/?cid=6183819244277642300">Ito Okashi</a><div class="feat">☕</div></div><div class="card mini"><a class="nm" href="https://maps.google.com/?cid=2353677495467661661">ARCHI coffee</a><div class="feat">☕ 带餐</div></div><div class="card mini"><a class="nm" href="https://maps.google.com/?cid=1861986567148218282">Bighand Bros</a><div class="feat">🍔 汉堡+咖啡带餐</div></div><div class="card mini"><a class="nm" href="https://maps.google.com/?cid=10876851069585567770">Bungalow</a><div class="feat">☕ 带餐</div></div></div></details>
+<div class="eat">🍕 <b>晚饭</b>：やま岸（京料理酒场 ¥4k–6k·<b>需提前预约</b>）→ 失败兜底：京都勝牛 / 銀次郎 / Ginjo Ramen Kubota</div>
+<div class="card"><a class="nm" href="https://maps.google.com/?cid=8707354722844618297">やま岸</a><span class="chip">🏮 京料理酒场</span><div class="feat">木屋町 人气店 ¥4k–6k</div><span class="wr">⚠️ 需预约：omakase.in 平台或电话 075-221-2187·人気尽早订</span></div>
+<div class="card"><a class="nm" href="https://maps.google.com/?cid=13530773874920873920">京都勝牛</a><span class="chip">🍲 兜底</span><div class="feat">炸牛排连锁 免排队</div></div>
+<div class="card"><a class="nm" href="https://maps.google.com/?cid=3178078462438394485">Ginjo Ramen Kubota</a><span class="chip">🍲 兜底</span><div class="feat">吟醸拉面 深夜营业</div></div>
+<div class="card"><a class="nm" href="https://maps.google.com/?cid=10195076815004934809">GINZA MUSIC BAR 京都</a><span class="chip">🍸 酒吧</span><div class="feat">先斗町 黑胶+鸡尾酒（10/4 晚场）</div></div>
+<div class="transit">🚶 河原町/先斗町 → 鸭川 → 四条乌丸回酒店</div>
+<h3 class="dayh">10/5 周一 · 东山早起 → 冈崎 → 木屋町</h3>
+<div class="daymeta">清水寺 6:00 开门，7:30 前人最少。路线：清水寺 → 三年坂 → 二年坂 → 八坂塔 → 八坂神社 → 祇园白川 → 一泽信三郎 → 冈崎午餐 → 木屋町下午茶。⚠️ 周一东山老铺茶屋/食堂多有定休，到闭店店就按顺路备选顶替。</div>
+<div class="card"><a class="nm" href="https://maps.google.com/?cid=7111013964196361402">清水寺</a><span class="chip">📍 世界遗产</span><div class="feat">6:00 开门 7:30 前几乎无人</div></div>
+<ol class="flow"><li>三年坂 → 二年坂（8:00 店铺陆续开）</li><li>八坂塔 正面机位</li><li>八坂神社 → 祇园白川 沿石板路</li></ol>
+<div class="card"><a class="nm" href="https://maps.google.com/?cid=6571717359690917171">一泽信三郎帆布</a><span class="chip">🛍️ 帆布包</span><div class="feat">10:00–18:00·周二定休（10/5 周一正常营业）·热门花色赶早</div></div>
+<div class="card"><a class="nm" href="https://maps.google.com/?cid=5917791165984044862">Ichikawaya Coffee</a><span class="chip">☕</span><div class="feat">町屋改造 草莓蛋糕季节限定</div></div>
+<div class="card"><a class="nm" href="https://www.google.com/maps/search/?api=1&query=山元麺蔵">山元麺蔵</a><span class="chip">🍜 乌冬</span><div class="feat">冈崎手打名店·教训：排队 40 分+ 不顺路</div><span class="wr">⚠️ 已降级为「路过看队再定」，祇园沿线兜底</span></div>
+<div class="card"><a class="nm" href="https://maps.google.com/?cid=737529368844235860">奥丹 南禅寺</a><span class="chip">🍲 汤豆腐</span><div class="feat">350年老铺 ¥3.5k–6k 静谧庭园</div></div>
+<div class="card"><a class="nm" href="https://maps.google.com/?cid=6438782158720599519">京都 To.</a><span class="chip">🍞 水果三明治</span><div class="feat">8:00–12:30 售完即止</div><span class="wr">⚠️ 周日休（10/5 周一可去）· 仅上午</span></div>
+<div class="card"><a class="nm" href="https://maps.google.com/?cid=10483551737668785656">Chiriri</a><span class="chip">🌰 和栗甜品</span><div class="feat">木屋町 和栗蒙布朗名店 鸭川散步收尾</div></div>
+<div class="card"><a class="nm" href="https://maps.google.com/?cid=3869007133156262236">静香</a><span class="chip">🍞 水果三明治</span><div class="feat">老铺 在西侧 需专门折返（顺路可放弃）</div></div>
+<div class="eat">🍕 <b>午饭</b>：祇园/冈崎沿线现场定（山元排队就撤）。<b>晚饭</b>：先斗町/木屋町自由探索</div>
+<div class="transit">🚶 河原町站 → 回 Fresa</div>
+<h3 class="dayh">10/6 周二 · 岚山半日 + 爵士喫茶夜 ⭐</h3>
+<div class="daymeta">早上岚山（8:00 前竹林几乎无人），中午回市区退「大件」准备明早出发。下午岚山户外店。晚上 <b>Jazz HANAYA</b>（京都最后一晚·町屋爵士喫茶）。行李策略：>160cm 需特大行李席；推荐今天走 <b>宅急便 京都→东京</b>（10/7 酒店收货）。<b>操作</b>：酒店前台说『宅急便をお願いします』→ 填运单（收件=LiVEMAX 东银座·10/7 入住·拼音姓名+手机号），<b>当日 17:00 前</b>交前台；附近 7-11/罗森也可寄。</div>
+<div class="card"><a class="nm" href="https://maps.google.com/?cid=1267032576814544333">竹林小径</a><span class="chip">📍 晨景</span><div class="feat">8:00 前无人 JR嵯峨野线嵯峨岚山</div></div>
+<div class="card"><a class="nm" href="https://www.google.com/maps/search/?api=1&query=天龍寺">天龙寺</a><span class="chip">📍 世界遗产</span><div class="feat">曹源池庭园 8:30 开</div></div>
+<div class="card"><a class="nm" href="https://www.google.com/maps/search/?api=1&query=渡月橋">渡月桥</a><span class="chip">📍 地标</span><div class="feat">桂川合影</div></div>
+<div class="card"><a class="nm" href="https://maps.google.com/?cid=13386475302108795611">Snow Peak Cafe 岚山</a><span class="chip">☕ 户外</span><div class="feat">岚山站旁 咖啡+装备</div></div>
+<div class="card"><a class="nm" href="https://maps.google.com/?cid=7839785392678406763">NORDISK Kyoto</a><span class="chip">🏕️</span><div class="feat">北欧帐篷/羽绒</div></div>
+<div class="card"><a class="nm" href="https://maps.google.com/?cid=15858952447521201838">THE NORTH FACE STANDARD KYOTO</a><span class="chip">🏕️</span><div class="feat">Goldwin 高端线</div></div>
+<details><summary>☕ 京町家喫茶&和菓子支线</summary><div class="inner">空蝉亭 Karasemitei · 神馬 Shinme · 嘯月 Shogetsu（和菓子名店·需预约）</div></details>
+<div class="eat">🍕 <b>晚饭</b>：岚山站周边或回市区乌丸沿线（提前吃，HANAYA 17:00 开门）</div>
+<div class="card"><a class="nm" href="https://maps.google.com/?cid=419138229359758466">Jazz HANAYA</a><span class="chip">🎵 爵士喫茶</span><div class="feat">町屋+提灯 17:00–22:00 京都最后一晚</div><span class="wr">⚠️ 周日定休；10/6 为周二——出发前电话/官网确认当日营业 · 席位少早到</span></div>
+<div class="card"><a class="nm" href="https://maps.google.com/?cid=6388842496805222906">Butterfly Kyoto</a><span class="chip">🍸 酒吧</span><div class="feat">HANAYA 之后续摊备选</div></div>
+<div class="transit">🚌 岚山 → 巴士/岚电 → 四条乌丸</div>
+<h2 class="cityh" id="tokyo">东京<small>10/7–10/10 · LiVEMAX 东银座 3晚·不含早 · ☔雨天→新宿地下街</small></h2>
+<h3 class="dayh">10/7 周三 · 新干线进京 → 日本桥 → 银座</h3>
+<div class="daymeta">上午新干线赴东京（勿乘山阳线方向）。酒店 <b><a href='https://maps.google.com/?cid=9798466005247926511'>LiVEMAX 东银座</a></b>（3晚·不含早），行李寄存后开逛。下午日本桥跑步集合店 → 银座文具/咖啡 → 神田精酿收尾。</div>
+<div class="card"><a class="nm" href="https://maps.google.com/?cid=11114180190203192">东京站</a><span class="chip">🚄 锚点</span><div class="feat">丸之内口 红砖站舍</div></div>
+<div class="card"><a class="nm" href="https://maps.google.com/?cid=10398553014008964512">STRIDE LAB</a><span class="svd">已存</span><span class="chip">🏃 跑步</span><div class="feat">跑鞋分析名店</div><span class="wr">⏰ 13:00–19:00</span></div>
+<div class="card"><a class="nm" href="https://maps.google.com/?cid=6606950030980980659">Run boys! Run girls!</a><span class="svd">已存</span><span class="chip">🏃 跑步</span><div class="feat">山と道有售</div><span class="wr">⏰ 15:00–20:00</span></div>
+<div class="card"><a class="nm" href="https://maps.google.com/?cid=9867957317894044882">Hima COFFEE & KAKIGORI</a><span class="svd">已存</span><span class="chip">☕</span><div class="feat">仓石一树推荐</div></div>
+<div class="card"><a class="nm" href="https://maps.google.com/?cid=9173520249352271904">Pharos Coffee</a><span class="svd">已存</span><span class="chip">☕</span><div class="feat">神保町 书卷气</div></div>
+<div class="card"><a class="nm" href="https://maps.google.com/?cid=9979308774657714368">銀座 伊東屋</a><span class="svd">已存</span><span class="chip">📚 文具</span><div class="feat">12层文具殿堂 3F试写/7F色彩/12F咖啡</div></div>
+<div class="card"><a class="nm" href="https://maps.google.com/?cid=9301737868646870783">BONGEN COFFEE 銀座</a><span class="svd">已存</span><span class="chip">☕</span><div class="feat">巷内日式空间 招牌浓拿铁</div></div>
+<div class="card"><a class="nm" href="https://maps.google.com/?cid=2142535125410863779">On Flagship Ginza</a><span class="svd">已存</span><span class="chip">🏃 跑步</span><div class="feat">瑞士跑鞋旗舰</div></div>
+<div class="card"><a class="nm" href="https://maps.google.com/?cid=8679293327778196578">寿司 美登利 銀座</a><span class="chip">🍣 兜底</span><div class="feat">午市套餐性价比 午晚皆可</div></div>
+<div class="card"><a class="nm" href="https://maps.google.com/?cid=18279700021610417012">DevilCraft Kanda</a><span class="svd">已存</span><span class="chip">🍺 精酿</span><div class="feat">自酿 IPA + 披萨 精酿帖5家之首</div></div>
+<div class="transit">🚇 晚饭神田 DevilCraft → 地铁回东银座（神田→日本桥→东银座 或 银座线换乘）</div>
+<h3 class="dayh">10/8 周四 ⭐ · 中目黑 → 代官山 → 惠比寿（本次行程主线）</h3>
+<div class="daymeta">筑地（可选早市）→ 中目黑（站东口出·沿目黑川东行）→ 代官山（下坡走法）→ 惠比寿 → Bar Trench 收尾。⭐ 主线见下方金色卡；其余卡片全是顺路备选池，走不动就跳。</div>
+<div class="card starline"><b>⭐ 主线 12 家 · 按步行顺序</b><div class="feat"><a href="https://maps.google.com/?cid=11876988200528194964">Onibus</a> → <a href="https://maps.google.com/?cid=16644597605622481829">豆虎</a> → <a href="https://maps.google.com/?cid=10997032907791932819">I'm donut?</a> → <a href="https://maps.google.com/?cid=6531068742811675663">visvim</a> → <a href="https://maps.google.com/?cid=1149678473840103145">Sidewalk Stand</a> → <a href="https://maps.google.com/?cid=11500391489452059206">noook</a> → <a href="https://maps.google.com/?cid=13134910799996059439">BAMBOO SHOOTS</a> → <a href="https://maps.google.com/?cid=15490653164204088489">蔦屋書店</a> → <a href="https://maps.google.com/?cid=8646554096367128976">nanamica</a> → <a href="https://maps.google.com/?cid=15789021432214032307">TNF紫标</a> → <a href="https://maps.google.com/?cid=16207701853522202251">NUMBER SUGAR</a> → <a href="https://maps.google.com/?cid=7971247173051187300">Bar TRENCH</a></div></div>
+<div class="card"><a class="nm" href="https://maps.google.com/?cid=11876988200528194964">Onibus Coffee 中目黑</a><span class="chip">☕ ⭐</span><div class="feat">木头小屋窗口店 已存</div></div>
+<div class="card"><a class="nm" href="https://maps.google.com/?cid=16644597605622481829">注文焙煎 豆虎 中目黑</a><span class="svd">已存</span><span class="chip">☕ ⭐</span><div class="feat">买豆送咖啡</div></div>
+<div class="card"><a class="nm" href="https://maps.google.com/?cid=10997032907791932819">I'm donut? 中目黑</a><span class="svd">已存</span><span class="chip">🍩 ⭐</span><div class="feat">9:00–19:00·不定休（查 IG）</div><span class="wr">⏰ 上午到·常 13:00 前后售罄</span></div>
+<div class="card"><a class="nm" href="https://maps.google.com/?cid=6531068742811675663">visvim 中目黑</a><span class="svd">已存</span><span class="chip">👕 ⭐</span><div class="feat">户外顶流旗舰 ¥30k–200k</div></div>
+<div class="card"><a class="nm" href="https://maps.google.com/?cid=1149678473840103145">Sidewalk Stand</a><span class="chip">☕ ⭐</span><div class="feat">冰拿铁空杯爱 已存 隔壁 Coverchord 也已存</div></div>
+<div class="card"><a class="nm" href="https://maps.google.com/?cid=7452659350571859612">Neel</a><span class="svd">已存</span><span class="chip">☕</span><div class="feat">顺路再一杯</div></div>
+<div class="card"><a class="nm" href="https://maps.google.com/?cid=12611724926463817496">COW BOOKS</a><span class="svd">已存</span><span class="chip">📚</span><div class="feat">松浦弥太郎书店</div></div>
+<div class="card"><a class="nm" href="https://maps.google.com/?cid=2607969088450125882">JIEDA</a><span class="svd">已存</span><span class="chip">👕</span><div class="feat">设计师品牌日系小众</div></div>
+<div class="card"><a class="nm" href="https://maps.google.com/?cid=13383543050598851629">1LDK</a><span class="svd">已存</span><span class="chip">👕</span><div class="feat">日系选货潮搭</div></div>
+<div class="card"><a class="nm" href="https://maps.google.com/?cid=14678716069514029717">Nigel Cabourn 中目黑</a><span class="svd">已存</span><span class="chip">👕</span><div class="feat">英伦军旅复古</div></div>
+<div class="card"><a class="nm" href="https://maps.google.com/?cid=16685968570758584996">kindal 中目黑</a><span class="svd">已存</span><span class="chip">🧸 中古</span><div class="feat">中古连锁</div></div>
+<div class="card"><a class="nm" href="https://maps.google.com/?cid=3659188063918212375">Nine Tailor</a><span class="svd">已存</span><span class="chip">🧣</span><div class="feat">领带/杂货</div></div>
+<div class="card"><a class="nm" href="https://maps.google.com/?cid=5752944925645348638">KINTO STORE</a><span class="svd">已存</span><span class="chip">🛒 器物</span><div class="feat">生活器物</div></div>
+<div class="card"><a class="nm" href="https://maps.google.com/?cid=11697104909586829978">Name.</a><span class="chip">👕</span><div class="feat">不对称剪裁设计</div></div>
+<div class="card"><a class="nm" href="https://maps.google.com/?cid=14264834289694882970">LE LABO 中目黑</a><span class="svd">已存</span><span class="chip">🧴</span><div class="feat">现调香氛实验室</div></div>
+<details><summary>🍵 茶/甘味支线（中目黑·点店名直达）</summary><div class="inner"><div class="card mini"><a class="nm" href="https://maps.google.com/?cid=217526765400454587">雨音茶寮</a><span class="svd">已存</span><div class="feat">🍵 甘味·和菓子</div></div><div class="card mini"><a class="nm" href="https://maps.google.com/?cid=17133685504578881810">古桑庵</a><span class="svd">已存</span><div class="feat">🍵 町家茶屋</div></div><div class="card mini"><a class="nm" href="https://maps.google.com/?cid=10771641215105227686">織部</a><div class="feat">☕ 喫茶</div><span class="wr">⚠️ 匹配待确认</span></div><div class="card mini"><a class="nm" href="https://maps.google.com/?cid=4165995376781669446">甘味処 初音</a><span class="svd">已存</span><div class="feat">🍵 甘味老铺</div></div><div class="card mini"><a class="nm" href="https://maps.google.com/?cid=1454892792239203760">Chanoma</a><span class="svd">已存</span><div class="feat">🍵 抹茶甜点</div></div><div class="card mini"><a class="nm" href="https://maps.google.com/?cid=12350192573097248120">bontin cafe</a><div class="feat">☕</div><span class="wr">⚠️ 可能不存在</span></div><div class="card mini"><a class="nm" href="https://maps.google.com/?cid=15099398183857011658">BOZ'n COFFEE</a><div class="feat">☕</div><span class="wr">⚠️ 未可靠匹配</span></div><div class="card mini"><a class="nm" href="https://maps.google.com/?cid=6811588938795725342">茶々水 SASUI</a><div class="feat">☕</div><span class="wr">⚠️ 待确认</span></div><div class="card mini"><a class="nm" href="https://maps.google.com/?cid=9265364940527736939">SABON 中目黑</a><div class="feat">🧴 护手霜/身体护理</div><span class="wr">⚠️ 疑闭店·打开先核对</span></div></div></details>
+<div class="card"><a class="nm" href="https://maps.google.com/?cid=11500391489452059206">noook</a><span class="svd">已存</span><span class="chip">🧢 ⭐</span><div class="feat">帽子/头巾/小包天堂 青叶台上坡位·中目黑段末</div></div>
+<div class="card"><a class="nm" href="https://maps.google.com/?cid=13134910799996059439">BAMBOO SHOOTS</a><span class="svd">已存</span><span class="chip">🏕️ ⭐</span><div class="feat">HMG/山と道全集 可退税 中目黑段末</div></div>
+<div class="transit">🚶 中目黑 → 代官山 步行 15 分钟（驹场通下坡走法，避免上坡）</div>
+<div class="eat">🍕 <b>午餐</b>：AFURI 改午场（避晚饭排队）或目黑川/驹场通沿线现场定——一路甜甜圈+咖啡已能垫半饱</div>
+<div class="card"><a class="nm" href="https://maps.google.com/?cid=15490653164204088489">蔦屋書店 代官山</a><span class="svd">已存</span><span class="chip">📚 ⭐</span><div class="feat">T-SITE 三栋连体 退税¥5,500</div></div>
+<div class="card"><a class="nm" href="https://maps.google.com/?cid=8646554096367128976">nanamica</a><span class="svd">已存</span><span class="chip">🏕️ ⭐</span><div class="feat">东京直营旗舰（帖文归代官山段·本店在南青山·以官网为准）</div></div>
+<div class="card"><a class="nm" href="https://maps.google.com/?cid=15789021432214032307">TNF 紫标 代官山</a><span class="svd">已存</span><span class="chip">🏕️ ⭐</span><div class="feat">THE NORTH FACE Purple Label</div></div>
+<div class="card"><a class="nm" href="https://maps.google.com/?cid=16207701853522202251">NUMBER SUGAR</a><span class="svd">已存</span><span class="chip">🍬 ⭐</span><div class="feat">手作糖 伴手礼</div></div>
+<div class="card"><a class="nm" href="https://maps.google.com/?cid=2045856550260257228">MHL.</a><span class="svd">已存</span><span class="chip">👕</span><div class="feat">Margaret Howell 副牌 极简衬衫</div></div>
+<div class="card"><a class="nm" href="https://maps.google.com/?cid=7336511202342536709">minä perhonen</a><span class="svd">已存</span><span class="chip">👗</span><div class="feat">皆川明 本店</div></div>
+<div class="card"><a class="nm" href="https://maps.google.com/?cid=9961241829233502282">TAIGA TAKAHASHI</a><span class="svd">已存</span><span class="chip">👔</span><div class="feat">新锐男装 T.T</div></div>
+<div class="card"><a class="nm" href="https://maps.google.com/?cid=7105362636294915306">Descente Blanc</a><span class="svd">已存</span><span class="chip">🏕️</span><div class="feat">allterrain 高端支线 国内四折</div></div>
+<div class="card"><a class="nm" href="https://maps.google.com/?cid=3207746518421528298">DOLCE TACUBO</a><span class="svd">已存</span><span class="chip">🍰</span><div class="feat">TACUBO 甜品</div></div>
+<div class="card"><a class="nm" href="https://maps.google.com/?cid=3479148181788397819">Hollywood Ranch Market</a><span class="svd">已存</span><span class="chip">👕</span><div class="feat">美式复古</div></div>
+<div class="card"><a class="nm" href="https://maps.google.com/?cid=12994429113783945948">Hedy</a><span class="chip">🧸 中古</span><div class="feat">中古宝藏</div></div>
+<div class="card"><a class="nm" href="https://maps.google.com/?cid=8487195363154480996">A.P.C. 代官山</a><span class="chip">👕</span><div class="feat">法式简约</div></div>
+<div class="card"><a class="nm" href="https://maps.google.com/?cid=711218565246919061">Ameri Vintage</a><span class="svd">已存</span><span class="chip">👗</span><div class="feat">日系轻复古</div></div>
+<div class="card"><a class="nm" href="https://maps.google.com/?cid=16204212127336155792">2nd STREET 代官山</a><span class="svd">已存</span><span class="chip">🧸 中古</span><div class="feat">连锁中古</div></div>
+<div class="card"><a class="nm" href="https://maps.google.com/?cid=14394161282994734805">金子眼镜 代官山</a><span class="svd">已存</span><span class="chip">👓</span><div class="feat">日本眼镜名匠</div></div>
+<div class="card"><a class="nm" href="https://maps.google.com/?cid=16234008790990094602">BAYCREWS STORE</a><span class="svd">已存</span><span class="chip">👕</span><div class="feat">选货</div></div>
+<div class="card"><a class="nm" href="https://maps.google.com/?cid=16800579529809435937">Okura 代官山</a><span class="svd">已存</span><span class="chip">👕</span><div class="feat">蓝染/和风</div></div>
+<div class="card"><a class="nm" href="https://maps.google.com/?cid=12701711974206910778">Ca4La 代官山</a><span class="svd">已存</span><span class="chip">🧢</span><div class="feat">帽饰名牌</div></div>
+<div class="card"><a class="nm" href="https://maps.google.com/?cid=11195163026634396930">Barbour 代官山</a><span class="svd">已存</span><span class="chip">👕</span><div class="feat">英式蜡衣</div></div>
+<div class="card"><a class="nm" href="https://maps.google.com/?cid=15160463901361921716">standard store</a><span class="chip">👕</span><div class="feat">生活选货</div></div>
+<div class="card"><a class="nm" href="https://maps.google.com/?cid=9115670084366448606">ISSEY MIYAKE 代官山</a><span class="svd">已存</span><span class="chip">👗</span><div class="feat">三宅一生</div></div>
+<div class="transit">🚶 代官山 → 惠比寿 步行 12 分钟</div>
+<div class="card"><a class="nm" href="https://maps.google.com/?cid=12509743885750926853">WAREHOUSE 惠比寿</a><span class="svd">已存</span><span class="chip">👖</span><div class="feat">牛仔重镇</div></div>
+<div class="card"><a class="nm" href="https://maps.google.com/?cid=16942582380668893523">JELADO 恵比寿</a><span class="svd">已存</span><span class="chip">👖</span><div class="feat">47501 牛裤入手地</div></div>
+<div class="card"><a class="nm" href="https://maps.google.com/?cid=8175311222089953397">恵比寿啤酒記念館</a><span class="svd">已存</span><span class="chip">🍺</span><div class="feat">限定周边+生啤</div></div>
+<div class="card"><a class="nm" href="https://maps.google.com/?cid=14710143254707964377">THE NORTH FACE CAMP 恵比寿</a><span class="svd">已存</span><span class="chip">🏕️</span><div class="feat">啤酒纪念馆同院</div></div>
+<div class="card"><a class="nm" href="https://maps.google.com/?cid=2269642747615090665">neutralworks. 恵比寿</a><span class="svd">已存</span><span class="chip">🏕️</span><div class="feat">same 院落户外</div></div>
+<div class="card"><a class="nm" href="https://maps.google.com/?cid=2084655722713185379">Fullmarks</a><span class="svd">已存</span><span class="chip">👕</span><div class="feat">选货</div></div>
+<div class="card"><a class="nm" href="https://maps.google.com/?cid=9994230786611430980">tamaniwa</a><span class="svd">已存</span><span class="chip">👕</span><div class="feat">选货</div></div>
+<div class="card"><a class="nm" href="https://maps.google.com/?cid=6021703549720979817">AFURI 中目黑</a><span class="chip">🍜 晚饭</span><div class="feat">柚子盐拉面 已存 排队就撤</div></div>
+<div class="card"><a class="nm" href="https://maps.google.com/?cid=7971247173051187300">Bar TRENCH</a><span class="chip">🍸 ⭐</span><div class="feat">8座传奇 苦精创作派</div><span class="wr">⏰ 18:00–02:00 惠比寿巷内</span></div>
+<div class="transit">🚇 日比谷线 惠比寿/中目黑 → 东银座 回酒店</div>
+<h3 class="dayh">10/9 周五 · 明治神宫 → 原宿 → 表参道 → 新宿（17:00）→ 涩谷夜景</h3>
+<div class="daymeta">早上神宫清静；原宿/表参道白天逛；<b>新宿提前到 17:00</b>（百货 20 点打烊）；涩谷夜景挪到压轴（Shibuya Sky 夜场票好约）。</div>
+<div class="card"><a class="nm" href="https://maps.google.com/?cid=10361244767556222835">明治神宮</a><span class="chip">📍</span><div class="feat">早去清静 南参道出 → 原宿</div></div>
+<div class="card"><a class="nm" href="https://maps.google.com/?cid=12719396976881368313">Gramicci Store 原宿</a><span class="svd">已存</span><span class="chip">🏕️</span><div class="feat">整栋旗舰 1F 咖啡角</div></div>
+<div class="card"><a class="nm" href="https://maps.google.com/?cid=3754197664257721695">DISTANCE</a><span class="svd">已存</span><span class="chip">🏃</span><div class="feat">satisfy/soar/On 全</div></div>
+<div class="card"><a class="nm" href="https://maps.google.com/?cid=4398135157958106833">PHILOCOFFEA</a><span class="svd">已存</span><span class="chip">☕</span><div class="feat">下楼梯像进另一个空间</div></div>
+<div class="card"><a class="nm" href="https://maps.google.com/?cid=4946889443411052568">Coffee Supreme</a><span class="svd">已存</span><span class="chip">☕</span><div class="feat">红色点缀街头感</div></div>
+<div class="card"><a class="nm" href="https://maps.google.com/?cid=12701830077881474149">EYEVAN 7285 南青山</a><span class="svd">已存</span><span class="chip">👓</span><div class="feat">表参道/南青山</div><span class="wr">⏰ 11:00–20:00 周二休</span></div>
+<div class="card"><a class="nm" href="https://maps.google.com/?cid=15727658044756457963">Little Nap COFFEE</a><span class="svd">已存</span><span class="chip">☕ 支线</span><div class="feat">代々木公园旁</div></div>
+<div class="card"><a class="nm" href="https://maps.google.com/?cid=15639916172954113714">Margaret Howell Cafe</a><span class="svd">已存</span><span class="chip">☕</span><div class="feat">涩谷神南</div></div>
+<div class="transit">🚇 表参道 → 银座线直达新宿（约15分 · 17:00 前到）</div>
+<div class="eat">🍕 <b>午餐</b>：原宿段用小吃/咖啡顶住；到新宿<b>先吃再逛</b>（思い出横丁・鳥貴族午市也营业）</div>
+<div class="card"><a class="nm" href="https://maps.google.com/?cid=11949488974513084296">OSHMAN'S 新宿</a><span class="svd">已存</span><span class="chip">🏕️</span><div class="feat">Gramicci 六七折+退税 美式复古+户外机能</div></div>
+<div class="card"><a class="nm" href="https://maps.google.com/?cid=15921346689209495204">SPORTS ALPEN TOKYO</a><span class="svd">已存</span><span class="chip">🏃</span><div class="feat">东京最大级 95折+退税</div></div>
+<div class="card"><a class="nm" href="https://maps.google.com/?cid=4327331443725384577">MURASAKI SPORTS 新宿</a><span class="svd">已存</span><span class="chip">🏃</span><div class="feat">户外/滑板连锁</div></div>
+<div class="card"><a class="nm" href="https://maps.google.com/?cid=344479288412723652">downbeat RUNNING</a><span class="svd">已存</span><span class="chip">🏃</span><div class="feat">小而精 bandit 唯一 on 越野马甲</div></div>
+<div class="card"><a class="nm" href="https://maps.google.com/?cid=833783007448199117">Oakley Store 新宿</a><span class="svd">已存</span><span class="chip">🕶️</span><div class="feat">货全中文服务</div></div>
+<div class="card"><a class="nm" href="https://maps.google.com/?cid=4571059030974543044">BEAMS Shinjuku</a><span class="svd">已存</span><span class="chip">👕</span><div class="feat">LUMINE EST B2 免税柜台 B1</div></div>
+<div class="card"><a class="nm" href="https://maps.google.com/?cid=15096441567115937607">The Bellwood</a><span class="chip">🍸</span><div class="feat">大正浪漫 亚洲50Best</div></div>
+<div class="card"><a class="nm" href="https://maps.google.com/?cid=10416638554535967955">思い出横丁</a><span class="chip">🍢</span><div class="feat">昭和小巷60家袖珍居酒屋</div></div>
+<div class="card"><a class="nm" href="https://maps.google.com/?cid=6127246487731162190">鳥貴族 新宿</a><span class="chip">🍢 兜底</span><div class="feat">¥350 均一 不想思考时</div></div>
+<div class="transit">🚉 新宿 → 山手线 5 分 → 涩谷（傍晚：逛街+晚饭）</div>
+<div class="card"><a class="nm" href="https://maps.google.com/?cid=1935335699422656795">SHIBUYA PARCO</a><span class="svd">已存</span><span class="chip">🛍️</span><div class="feat">大牌+设计师+中古（20:00 前后闭店·先逛店再吃饭）</div></div>
+<div class="card"><a class="nm" href="https://maps.google.com/?cid=8189862441689409857">TYCOON running</a><span class="svd">已存</span><span class="chip">🏃</span><div class="feat">宇田川地下 惊喜最大 全帽区</div></div>
+<div class="card"><a class="nm" href="https://maps.google.com/?cid=5751086901436282555">CONNECTED</a><span class="svd">已存</span><span class="chip">🏃</span><div class="feat">莺谷町老爷爷店 坚持发售日</div></div>
+<div class="card"><a class="nm" href="https://maps.google.com/?cid=12959276843279265486">雲隠れ 渋谷</a><span class="svd">已存</span><span class="chip">🍽️</span><div class="feat">道玄坂 隐秘食堂·晚饭</div></div>
+<div class="card"><a class="nm" href="https://maps.google.com/?cid=8067212359343678579">Shibuya Sky</a><span class="svd">已存</span><span class="chip">📍 夜景压轴</span><div class="feat">变动票价：日间约¥2,200起、15:00 后夜场最高约¥3,400·订票官网 shibuya-sky.jp（WEB 票最便宜）</div><span class="wr">⚠️ 热门日落/夜场会售罄——提前官网抢票，不保证当日有票</span></div>
+<div class="transit">🚇 涩谷 → 银座线（→银座→东银座）或 山手线→新桥换乘 · 回酒店</div>
+<h3 class="dayh">10/10 周六 · 下北泽 → 取行李 → 羽田</h3>
+<div class="daymeta">下北泽上午（古着/咖啡/唱片），下午回酒店取行李（退房后可寄存前台）→ 浅草线/京急 → <b>羽田 T3</b>（<b>10/11 01:00 起飞·按机票核实</b>，目标 22:30 前到）。⚠️ 周六商店照常；Bear Pond 中午前到。</div>
+<div class="card"><a class="nm" href="https://maps.google.com/?cid=1894226476914730511">CITY COUNTRY CITY</a><span class="svd">已存</span><span class="chip">🍞 brunch</span><div class="feat">先垫肚子</div></div>
+<div class="card"><a class="nm" href="https://maps.google.com/?cid=2501638981371953487">Bear Pond Espresso</a><span class="svd">已存</span><span class="chip">☕</span><div class="feat">约 11:00 开门·Angel Stain 周末限定（10/10 周六可点）·售完即关</div><span class="wr">⏰ 中午前到·定休日出发前查 IG</span></div>
+<div class="card"><a class="nm" href="https://maps.google.com/?cid=10809862832966191870">SOUNDSGOOD</a><span class="svd">已存</span><span class="chip">🧸 中古</span><div class="feat">古董玩具+服饰 寻宝感最强</div></div>
+<div class="card"><a class="nm" href="https://maps.google.com/?cid=12902894334828768942">SOCO/GORILLA</a><span class="chip">👕</span><div class="feat">thinking GORILLA 选货</div></div>
+<div class="card"><a class="nm" href="https://maps.google.com/?cid=5817184359906822938">Disk Union 下北泽</a><span class="svd">已存</span><span class="chip">🎵 唱片</span><div class="feat">中古唱片</div></div>
+<div class="card"><a class="nm" href="https://maps.google.com/?cid=12014426440864378181">Tokyo Retro a.m.a.</a><span class="chip">👕 古着</span><div class="feat">美式复古</div></div>
+<div class="card"><a class="nm" href="https://maps.google.com/?cid=17864829488898371435">Desk Labo</a><span class="svd">已存</span><span class="chip">📝 文具</span><div class="feat">复古文具</div></div>
+<div class="card"><a class="nm" href="https://maps.google.com/?cid=192055829780719980">BEAMS Planets</a><span class="svd">已存</span><span class="chip">🧢</span><div class="feat">帽饰概念店</div></div>
+<div class="card"><a class="nm" href="https://maps.google.com/?cid=9408685749959371399">APFR</a><span class="svd">已存</span><span class="chip">🕯️</span><div class="feat">香薰生活</div></div>
+<div class="card"><a class="nm" href="https://maps.google.com/?cid=13682566147451121916">COFFEE COUNTY</a><span class="svd">已存</span><span class="chip">☕</span><div class="feat">自烘咖啡</div></div>
+<div class="card"><a class="nm" href="https://maps.google.com/?cid=13184541804663990257">BLANC-FAON</a><span class="svd">已存</span><span class="chip">👕 古着</span><div class="feat">法式古着</div></div>
+<details><summary>⚽ 球衣支线（4家·点店名直达）</summary><div class="inner"><div class="card mini"><a class="nm" href="https://maps.google.com/?cid=16760613992032504188">4bfc</a><div class="feat">⚽ 足球球衣古着</div><span class="wr">⚠️ 需核对</span></div><div class="card mini"><a class="nm" href="https://maps.google.com/?cid=2701142097314137643">Baggage Coffee</a><div class="feat">⚽+☕ 球衣+咖啡复合</div><span class="wr">⚠️ 需核对</span></div><div class="card mini"><a class="nm" href="https://maps.google.com/?cid=6074772220631433451">Vintage Sports</a><div class="feat">⚽ 复古球衣</div><span class="wr">⚠️ 需核对</span></div><div class="card mini"><a class="nm" href="https://maps.google.com/?cid=16906896605876056881">KIMAMA</a><div class="feat">⚽ 古着球衣</div><span class="wr">⚠️ 需核对</span></div></div></details>
+<div class="card"><a class="nm" href="https://maps.google.com/?cid=8215175827991883231">羽田机场 T3</a><span class="chip">✈️</span><div class="feat">免税最后一轮 羽田蕉下伴手礼</div></div>
+<div class="transit">🚃 京急/浅草线 直达羽田 → T3 出发</div>
+<h3 class="dayh">🧾 实用 & 附录</h3>
+<details><summary>🛃 免税攻略</summary><div class="inner">本次旅行（10/2–10/10）仍适用<b>现行店内即免制</b>：同店同日满 ¥5,000 免 10%·需护照<b>原件</b>。<b>新制（机场统一退税）2026/11/1 才生效</b>，与本次无关、无需操作。店铺适用性分级：大店（百货/伊东屋/蔦屋）全支持；中古店与小店部分支持（结账先问）；同店两人可合并凑单。贵的东西集中在大店买。</div></details>
+<details><summary>👥 两人分工 & 交通</summary><div class="inner"><b>A</b>：SmartEX（smart-ex.jp）买 10/4 + 10/7 指定席（>160cm 行李加特大行李席）+ Suica。<b>B</b>：Shibuya Sky 订票 + やま岸预约 + 护照原件 + 现金 ¥30k+。<br>🧳 行李：>160cm 需特大行李席；10/6 宅急便 京都→东京。<br>🚄 新干线防呆：大阪→京都乘<b>东海道新干线</b>（勿上山阳线）。</div></details>
+<details><summary>🍸 鸡尾酒吧总表（点店名直达）</summary><div class="inner"><div class="card mini"><a class="nm" href="https://maps.google.com/?cid=8702241179377055165">Bar Nayuta</a><div class="feat">美国村5F·无菜单创作（已嵌 10/2 晚）</div></div><div class="card mini"><a class="nm" href="https://maps.google.com/?cid=8731467064301064878">Bar K 北新地</a><div class="feat">大阪·北新地</div></div><div class="card mini"><a class="nm" href="https://maps.google.com/?cid=273993575549924215">CRAFTROOM</a><div class="feat">大阪唯一 Asia's 50 Best</div></div><div class="card mini"><a class="nm" href="https://maps.google.com/?cid=18061394339248031994">BAR JUNIPER</a><div class="feat">大阪·金酒 600 种</div></div><div class="card mini"><a class="nm" href="https://maps.google.com/?cid=13360827243898653103">SODDEN FROG</a><div class="feat">大阪</div></div><div class="card mini"><a class="nm" href="https://maps.google.com/?cid=7971247173051187300">Bar TRENCH</a><div class="feat">惠比寿·8座传奇·18:00–02:00（已嵌 10/8）</div></div><div class="card mini"><a class="nm" href="https://maps.google.com/?cid=15096441567115937607">The Bellwood</a><div class="feat">新宿·大正浪漫·亚洲 50Best（已嵌 10/9）</div></div><div class="card mini"><a class="nm" href="https://maps.google.com/?cid=16932653358272157416">Punch Room Tokyo</a><div class="feat">The Tokyo EDITION 酒店内</div></div><div class="card mini"><a class="nm" href="https://maps.google.com/?cid=9106308860768526027">The SG Club</a><div class="feat">涩谷·Shingo Gokan 主理</div></div><div class="card mini"><a class="nm" href="https://maps.google.com/?cid=9430351831564603232">Virtù</a><div class="feat">四季酒店 39F·World's 50 Best #45</div></div><div class="card mini"><a class="nm" href="https://maps.google.com/?cid=9087814451927436466">Gen Yamamoto</a><div class="feat">10 座·预约制·当季水果调酒</div></div><div class="card mini"><a class="nm" href="https://maps.google.com/?cid=10195076815004934809">GINZA MUSIC BAR 京都</a><div class="feat">先斗町·黑胶+酒（已嵌 10/4）</div></div><div class="card mini"><a class="nm" href="https://maps.google.com/?cid=6388842496805222906">Butterfly Kyoto</a><div class="feat">京都（已嵌 10/6 续摊备选）</div></div></div></details>
+<details><summary>☕🍺 东京咖啡&精酿支线（非顺路·机动·点店名直达）</summary><div class="inner"><div class="card mini"><a class="nm" href="https://maps.google.com/?cid=4490303138371859698">LEAVES COFFEE ROASTERS</a><span class="svd">已存</span><div class="feat">☕ 自家焙煎</div></div><div class="card mini"><a class="nm" href="https://maps.google.com/?cid=4890361721267781904">KIELO COFFEE</a><span class="svd">已存</span><div class="feat">☕</div></div><div class="card mini"><a class="nm" href="https://maps.google.com/?cid=11182982844524350092">SHI-TEN</a><span class="svd">已存</span><div class="feat">☕</div></div><div class="card mini"><a class="nm" href="https://maps.google.com/?cid=17712239642440825902">Tokyo Little House</a><span class="svd">已存</span><div class="feat">☕+🛒 赤坂·杂货复合</div></div><div class="card mini"><a class="nm" href="https://maps.google.com/?cid=6997111678458424101">Inkhorn Brewing</a><span class="svd">已存</span><div class="feat">🍺 目白·精酿</div></div><div class="card mini"><a class="nm" href="https://maps.google.com/?cid=9838065922335477324">TANAKAYA</a><span class="svd">已存</span><div class="feat">🍺 目白·瓶装精酿</div></div><div class="card mini"><a class="nm" href="https://maps.google.com/?cid=17269378531622713814">UCHU BREWING</a><span class="svd">已存</span><div class="feat">🍺 虎之门·精酿</div></div><div class="card mini"><a class="nm" href="https://maps.google.com/?cid=8603898963370906356">WCB The Room</a><span class="svd">已存</span><div class="feat">🍺 虎之门·精酿吧</div></div><div class="card mini"><a class="nm" href="https://maps.google.com/?cid=7535562674946874278">YOKOHAMA BAY BREWING</a><span class="svd">已存</span><div class="feat">🍺 横滨·行程外备选</div></div></div></details>
+<details><summary>🆘 紧急 & 日语小抄</summary><div class="inner">🚓 报警 110 ｜ 🚑 急救/火警 119。护照遗失→联系使领馆补办（出行前把护照拍照存云盘）。日语词：「定休日」=固定休息日 ·「準備中/営業中」=未开门/营业中 ·「売り切れ」=售罄 ·「外税/内税」=不含税/含税。</div></details>
+<details><summary>📋 出发前核实清单</summary><div class="inner">① 十忠八九周六营业 ② やま岸预约（omakase.in/电话）③ Shibuya Sky 订票 ④ Jazz HANAYA 10/6 营业（电话/官网/IG）⑤ SmartEX 两程指定席+特大行李席 ⑥ 宅急便预约 ⑦ 羽田 01:00 航班值机与 T3</div></details>
+<div class="wb">⚠️ 待补信息（帖子无文字店名，需补截图）：银座烧鸟（无名帖）· 原宿视频店 · 餐酒吧帖 · 惠比寿酒吧帖 · 表参道 GOAT 店 · 必逛10店帖。SABON 中目黑疑闭店；BOZ'n COFFEE / 織部 / 茶々水 待人工确认。</div>
+<h2 id="util">实用 & 附录</h2>
+<a class="fab" href="#ov">↑</a>
+<script>(function(){var d=new Date();var key=(d.getMonth()+1)+"\/"+d.getDate()+" ";var hs=document.querySelectorAll("h3.dayh");for(var i=0;i<hs.length;i++){if(hs[i].textContent.indexOf(key)===0){hs[i].id="today";hs[i].style.color="#fff";break;}}})();</script>
+</div>
+</body>
+</html>
